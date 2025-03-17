@@ -9,7 +9,7 @@
 
 
     <!-- facebook-->
-    <meta property="og:url" content="URL of your page">
+    <meta property="og:url" content="https://newsletter-signup-form-with-success.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Newsletter Sign-up Form">
     <meta property="og:description" content="Frontendmentor Newsletter sign-up form solution">
@@ -21,11 +21,13 @@
     <meta name="twitter:title" content="Newsletter Sign-up Form">
     <meta name="twitter:description" content="Frontendmentor Newsletter sign-up form solution">
     <meta name="twitter:image" content="URL to an image related to your page">
-    <meta name="twitter:url" content="URL of your page">
+    <meta name="twitter:url" content="https://newsletter-signup-form-with-success.netlify.app/">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <main>
-      <div>
+      <div class="txt-content-wrapper">
          <h1>Stay updated!</h1>
          <p>Join 60,000+ managers receiving monthly updates on:</p>
 
@@ -37,12 +39,13 @@
 
          <form>
             <label for="email">Email address</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="email@company.com">
 
             <button type="submit" id="submit">subscribe to monthly newsletter</button>
          </form>
       </div>
-      <div>
+
+      <div class="img-wrapper">
          <img src="asset/illustration-sign-up-desktop.svg" alt=" ">
       </div>
    </main>
