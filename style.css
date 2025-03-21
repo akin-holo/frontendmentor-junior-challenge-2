@@ -112,8 +112,6 @@ input:focus {
    margin: 4rem auto;
    background-color: var(--white);
    border-radius: 30px;
-
-   transition: 0.5s;
 }
 .checkmark {
    margin: 2.5rem 2.5rem 20px 2.5rem;
@@ -142,7 +140,6 @@ h2 {
    margin: 20px 2.5rem auto;
    border-radius: 8px;
    border: none;
-
 }
 .btn-submit:hover,
 .btn-dismiss:hover {
@@ -153,23 +150,39 @@ h2 {
 
   /* Breakpoint */
 
-  @media screen and (max-width: 359px) {
+  @media screen and (max-width: 900px) {
    .signup-container {
       flex-direction: column-reverse;
+      width: 90vw;
+      padding-bottom: 15px;
+      margin: 1rem auto auto;
+      border-radius: unset;
+   }
+
+   .txt-content-wrapper,
+   .img-wrapper {
+      width: 100%;
+      margin: 0;
+   }
+
+   .desktop-illus-img {
+     width: 70%;
+     margin: 0 auto;
+   }
+  }
+
+
+  @media screen and (max-width: 700px) {
+   .signup-container {
+      display: flex;
       padding-bottom: 15px;
       margin: 0.5rem 1rem 2rem;
-      border-radius: unset;
    }
    picture {
       display: block;
       margin: auto;
-      width: inherit;
    }
    
-   .txt-content-wrapper {
-      width: 100%;
-      margin: 0;
-   }
    h1 {
       font-size: 2.5rem;
    }
@@ -178,17 +191,48 @@ h2 {
       margin: 10px 20px 15px auto;
    }
 
-   .img-wrapper {
-      width: 100%;
-      margin: 0;
-   }
-
    .desktop-illus-img {
-      height: inherit;
+      width: 100%;
+      height: auto;
+   } 
+  }
+
+   .success-container {
+      display: none;
+      width: 90%;
+      height: 90vh;
+      margin: 10% auto;
+   }
+   h2 {
+      color: var(--dark-blue);
+      margin: 2rem auto auto 20px;
+      font-weight: 700;
+      font-size: 2.5rem;
    }
 
-   /* form {
-      margin: auto auto 40px;
-   } */
-   
-  }
+   .confirmation-txt {
+      margin: 5rem auto auto auto;
+   }
+
+   .btn-dismiss {
+      margin: 10rem auto auto auto;
+      width: 100%;
+   }
+
+@media screen and (max-width: 359px) {
+   .success-container {
+      display: none;
+      width: 95%;
+      height: 95vh;
+      margin: auto;
+   }
+   h2 {
+      margin: 1rem auto auto 20px;
+   }
+   .confirmation-txt {
+      margin: 1rem auto auto auto;
+   }
+   .btn-dismiss {
+      margin: 3rem auto auto auto;
+   }
+}
