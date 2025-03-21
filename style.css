@@ -63,13 +63,14 @@ li {
 form {
    margin: 30px 20px auto;
 }
-.email-wrap {
-   display: flex;
-   flex-direction: column;
+.label-and-errorMSG-wrap {
+   display: flex; 
+   justify-content: space-between;
 }
 input {
+   width: 100%;
    height: 40px;
-   margin: 10px 0 0 0;
+   margin: 10px 10px 30px 0;
    border: 1px solid var(--grey);
    border-radius: 10px;
    transition: 0.4s;
@@ -78,14 +79,11 @@ input:focus {
    outline: none;
    border: 1px solid red;
 }
+
 .error-msg {
    color: #ff0000;
-   margin: 0 20px 30px 0;
+   margin: 0;
    border-radius: 5px;
-   font-style: italic;
-   appearance: 0;
-   font-weight: bold;
-   font-size: 13px;
 }
 
 .btn-submit {
@@ -132,9 +130,8 @@ h2 {
    margin: auto 4rem 10px 2.5rem;
 }
 #emailSentTo {
-   color: blue;
-   text-decoration: underline;
-   font-size: 14px;
+   color: var(--dark-blue);
+   font-weight: 700;
 }
 
 .btn-dismiss {
@@ -156,10 +153,12 @@ h2 {
 
   /* Breakpoint */
 
-  @media screen and (max-width: 759px) {
+  @media screen and (max-width: 359px) {
    .signup-container {
       flex-direction: column-reverse;
-      margin: auto;
+      padding-bottom: 15px;
+      margin: 0.5rem 1rem 2rem;
+      border-radius: unset;
    }
    picture {
       display: block;
@@ -171,10 +170,25 @@ h2 {
       width: 100%;
       margin: 0;
    }
+   h1 {
+      font-size: 2.5rem;
+   }
+ 
+   li {
+      margin: 10px 20px 15px auto;
+   }
 
    .img-wrapper {
       width: 100%;
       margin: 0;
    }
+
+   .desktop-illus-img {
+      height: inherit;
+   }
+
+   /* form {
+      margin: auto auto 40px;
+   } */
    
   }
