@@ -176,7 +176,6 @@ h2 {
   @media screen and (max-width: 700px) {
    .signup-container {
       width: 90vw;
-      /* display: none; */
       padding-bottom: 15px;
       margin: 0.5rem 1rem 2rem;
    }
@@ -199,8 +198,8 @@ h2 {
 
    .success-container {
       width: 96%;
-      height: 90vh;
-      margin: 10% auto;
+      height: 80vh;
+      margin: 5% auto;
    }
    h2 {
       color: var(--dark-blue);
