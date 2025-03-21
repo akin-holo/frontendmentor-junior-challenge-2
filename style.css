@@ -30,7 +30,7 @@ main {
 
 }
 .signup-container {
-   display: none;
+   display: flex;
    background-color: var(--white);
    border-radius: 30px;
 }
@@ -61,13 +61,15 @@ li {
 } */
 
 form {
+   margin: 30px 20px auto;
+}
+.email-wrap {
    display: flex;
    flex-direction: column;
-   margin: 30px 20px auto;
 }
 input {
    height: 40px;
-   margin: 10px 0 30px 0;
+   margin: 10px 0 0 0;
    border: 1px solid var(--grey);
    border-radius: 10px;
    transition: 0.4s;
@@ -76,9 +78,19 @@ input:focus {
    outline: none;
    border: 1px solid red;
 }
+.error-msg {
+   color: #ff0000;
+   margin: 0 20px 30px 0;
+   border-radius: 5px;
+   font-style: italic;
+   appearance: 0;
+   font-weight: bold;
+   font-size: 13px;
+}
 
 .btn-submit {
    color: var(--white);
+   width: 100%;
    height: 40px;
    background-color: var(--dark-blue);
    border: none;
@@ -96,11 +108,14 @@ input:focus {
 }
 
 .success-container {
+   display: none;
    width: 400px;
    height: 400px;
    margin: 4rem auto;
    background-color: var(--white);
    border-radius: 30px;
+
+   transition: 0.5s;
 }
 .checkmark {
    margin: 2.5rem 2.5rem 20px 2.5rem;
@@ -116,6 +131,11 @@ h2 {
 .confirmation-txt {
    margin: auto 4rem 10px 2.5rem;
 }
+#emailSentTo {
+   color: blue;
+   text-decoration: underline;
+   font-size: 14px;
+}
 
 .btn-dismiss {
    color: var(--white);
@@ -127,8 +147,34 @@ h2 {
    border: none;
 
 }
-.btn-submit :hover,
+.btn-submit:hover,
 .btn-dismiss:hover {
    background-color: var(--red);
    transition: 0.4s;
 }
+
+
+  /* Breakpoint */
+
+  @media screen and (max-width: 759px) {
+   .signup-container {
+      flex-direction: column-reverse;
+      margin: auto;
+   }
+   picture {
+      display: block;
+      margin: auto;
+      width: inherit;
+   }
+   
+   .txt-content-wrapper {
+      width: 100%;
+      margin: 0;
+   }
+
+   .img-wrapper {
+      width: 100%;
+      margin: 0;
+   }
+   
+  }
