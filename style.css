@@ -155,7 +155,7 @@ h2 {
       flex-direction: column-reverse;
       width: 90vw;
       padding-bottom: 15px;
-      margin: 1rem auto auto;
+      margin: 15% auto auto;
       border-radius: unset;
    }
 
@@ -167,6 +167,7 @@ h2 {
 
    .desktop-illus-img {
      width: 70%;
+     height: auto;
      margin: 0 auto;
    }
   }
@@ -174,7 +175,7 @@ h2 {
 
   @media screen and (max-width: 700px) {
    .signup-container {
-      display: flex;
+      /* display: none; */
       padding-bottom: 15px;
       margin: 0.5rem 1rem 2rem;
    }
@@ -195,11 +196,9 @@ h2 {
       width: 100%;
       height: auto;
    } 
-  }
 
    .success-container {
-      display: none;
-      width: 90%;
+      width: 96%;
       height: 90vh;
       margin: 10% auto;
    }
@@ -218,11 +217,11 @@ h2 {
       margin: 10rem auto auto auto;
       width: 100%;
    }
+}
 
 @media screen and (max-width: 359px) {
    .success-container {
-      display: none;
-      width: 95%;
+      width: 98%;
       height: 95vh;
       margin: auto;
    }
@@ -233,6 +232,7 @@ h2 {
       margin: 1rem auto auto auto;
    }
    .btn-dismiss {
+      width: 98%;
       margin: 3rem auto auto auto;
    }
 }
