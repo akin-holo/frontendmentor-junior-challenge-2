@@ -175,6 +175,8 @@ h2 {
 
   @media screen and (max-width: 700px) {
    .signup-container {
+      width: 90vw;
+      height: 80vh;
       /* display: none; */
       padding-bottom: 15px;
       margin: 0.5rem 1rem 2rem;
@@ -194,7 +196,6 @@ h2 {
 
    .desktop-illus-img {
       width: 100%;
-      height: auto;
    } 
 
    .success-container {
@@ -220,6 +221,10 @@ h2 {
 }
 
 @media screen and (max-width: 359px) {
+   .desktop-illus-img {
+      width: 100%;
+      height: auto;
+   } 
    .success-container {
       width: 98%;
       height: 95vh;
