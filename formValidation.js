@@ -43,5 +43,5 @@ function showErrorMessage() {
 
 const dismissButton = document.getElementById("dismissButton");
 dismissButton.onclick = function() {
-   location.href = "/";
+   document.location.reload();
 }
